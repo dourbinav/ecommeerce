@@ -19,7 +19,7 @@ import { Link, useNavigate } from 'react-router-dom'
     if(username=="" || password==""||email==""||phone==""){
       return;
     }
-    axios.post('http://localhost:4000/user/signup',{
+    axios.post('https://ecommeerce.vercel.app/user/signup',{
       username:username,
       password:password,
       phone:phone,
