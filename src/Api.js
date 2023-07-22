@@ -38,7 +38,7 @@ export async function displayRazorpay(totalamount,username) {
       return;
   }
 
-  const result = await axios.post("http://localhost:4000/payment/order",{
+  const result = await axios.post("https://ecommeerce.vercel.app/payment/order",{
     amount:totalamount*100,
   });
 
